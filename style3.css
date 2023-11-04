@@ -1,0 +1,42 @@
+:root {
+  --warna: white;
+}
+
+* {
+  text-decoration: none;
+  outline-style: none;
+  font-family: "parcifico", cursive;
+  color: white;
+}
+
+body {
+  background-image: url('kg.jpg');
+  background-size: cover;
+  position: relative;
+  display: table-row;
+  align-items: center;
+  justify-content: center; 
+}
+
+table{
+  border-collapse: collapse;
+  font-size: 10pt;
+  border: 2px solid #cccc;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+td{
+  padding: 3px;
+  height: 25px;
+  font-family: parcifico, cursive;
+  color: white;
+}
+h3{
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  }
+  input{
+    color: black;
+  }

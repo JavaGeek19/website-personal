@@ -1,0 +1,48 @@
+<link rel="stylesheet" type="text/css" href="style3.css">
+
+<h3> Input Barang </h3>
+
+<form action="" method="post">
+<table>
+    <tr>
+        <td width="120">Kode Barang</td>
+        <td> <input type="text" name="kobar"> </td>
+    </tr>
+    <tr>
+        <td> Nama Barang </td>
+        <td> <input type="text" name="nabar"> </td>
+    </tr>
+    <tr>
+        <td>Jumlah Barang</td>
+        <td> <input type="text" name="jumlah"> </td>
+    </tr>
+    <tr>
+        <td>Harga Barang</td>
+        <td> <input type="text" name="harga"> </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" name="proses" value="Simpan"> </td>
+    </tr>
+</table>
+
+</form>
+
+<html
+include "koneksi.html";
+
+if(isset($_POST['proses'])){
+mysqli_query($koneksi, "insert into tabel1 set  
+kobar = '$_POST[kobar]',
+nabar = '$_POST[nabar]',
+jumlah = '$_POST[jumlah]',
+harga = '$_POST[harga]'");
+
+echo "Data barang baru telah tersimpan";
+
+}
+
+?>
+<td>
+        <li><a href="index.html">Beranda</a></li>
+    </td>

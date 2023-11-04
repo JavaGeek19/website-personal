@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lokasi Saya</title>
+    <style>
+        /* Reset CSS untuk menghilangkan margin dan padding default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Tampilan latar belakang dan font */
+        body {
+            background-color: #1a5276; /* Warna biru steel sebagai latar belakang */
+            color: black; /* Warna teks putih */
+            font-family:"parcifico", cursive;
+        }
+
+        /* Container styling */
+        .container {
+            border: 5px solid #1a5276; /* Border biru steel */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Google Maps container styling */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lokasi Saya</h1>
+        <div id="map"></div>
+    </div>
+
+    <script>
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: { lat: -7.7956, lng: 110.3695 }, // Koordinat tengah peta
+      zoom: 12 // Tingkat zoom
+    });
+  }
+</script>
+
+ </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </script>
+ </div>
+              
+</body>
+</html>
